@@ -9,7 +9,7 @@
     NSString *documentsDirectory = [allPaths objectAtIndex:0];
     NSString *pathForLog = [documentsDirectory stringByAppendingPathComponent:@"logcat.txt"];
     
-    freopen([pathForLog cStringUsingEncoding:NSASCIIStringEncoding],"a+",stderr);
+    freopen([pathForLog cStringUsingEncoding:NSASCIIStringEncoding],"a+",stdout);
   
   }
 @end
